@@ -113,12 +113,30 @@ light-ton:hover {
   </style>
   
 <script>
+  function goIsle() {
+    document.getElementById("dawn-pic").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+</script>
+
+<script>
   function goAviary() {
     document.getElementById("aviary-pic").scrollIntoView({
       behavior: "smooth"
     });
   }
 </script>
+
+<script>
+  function goPrairie() {
+    document.getElementById("prairie-pic").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+</script>
+
+
   
 </head>
 
@@ -136,11 +154,11 @@ light-ton:hover {
   </a>
     
   <div class="card">
-  <img id="Aviary-pic" src="avil1.jpg" alt="Aviary Village">
+  <img id="aviary-pic" src="avil1.jpg" alt="Aviary Village">
   <img src="avil2.jpg" alt="Aviary Village">
   </div>
     
-    <button onclick=goaviary-pic()">AVIARY VILLAGE</button>
+    <button onclick=goAviary()">AVIARY VILLAGE</button>
 </div>
     
   <o>
@@ -149,8 +167,8 @@ light-ton:hover {
     - And in the village, after the quests are done, you can get: hat, haircut, cape, suit/clothes, mask shop. Actually they are just places you can try to where anything while you were in there. Real clothes that you can wear everywhere and everytime need to be bought from spirits.
     </o>
   <div>
-  <img id="Dawm-pic" src="isle1.jpg" alt="Isle of Dawn">
-    <button onclick=goDawn-pic()">ISLE OF DAWN</button>
+  <img id="dawn-pic" src="isle1.jpg" alt="Isle of Dawn">
+    <button onclick=goIsle()">ISLE OF DAWN</button>
 </div>
     
   <o>
@@ -158,9 +176,9 @@ light-ton:hover {
   </o>
     
     <div>
-  <img id="Prairie-pic" src="dayli1.jpg" alt="Daylight Prairie">
+  <img id="prairie-pic" src="dayli1.jpg" alt="Daylight Prairie">
   <img src="dayli2.jpg" alt="Daylight Pairie">
-    <button onclick=goPrairie-pic()">DAYLIGHT PRAIRIE</button>
+    <button onclick=goPrairie()">DAYLIGHT PRAIRIE</button>
 </div>
     
   <o>
@@ -170,6 +188,7 @@ light-ton:hover {
   
 </body>
 </html>
+
 
 
 
