@@ -80,7 +80,7 @@ img:hover {
   font-family: "Georgia", "Times New Roman", serif;
   padding: 20px  40px;
   border: none;
-  border-radius: 40px;
+  border-radius: 999px;
   cursor: pointer;
   margin: 20px;
   margin-top: 20px;
@@ -91,6 +91,26 @@ img:hover {
 
 button:hover {
   background: linear-gradient(135deg, #2ecc71, #9ae6b4);
+  transform: scale(1.1);
+}
+    light-ton {
+  background: linear-gradient(135deg, green, lightgreen);
+  color: white;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px  40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px;
+  margin-top: 20px;
+  min-width: 260px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+light-ton:hover {
+  background: linear-gradient(135deg, yellow, lightyellow);
   transform: scale(1.1);
 }
   </style>
@@ -114,18 +134,28 @@ button:hover {
     In sky, there were a lot of places with different features, quests. No map is the same as another. And each of them have "details". One map can have a lot of places.
   </a>
   <div class="card">
-  <img id="aviary-pic" src="avil1.jpg" alt="Aviary Village">
+  <img id="Aviary-pic" src="avil1.jpg" alt="Aviary Village">
   <img src="avil2.jpg" alt="Aviary Village">
 </div>
-    <button onclick="goAviary()">AVIARY VILLAGE</button>
+    <button onclick=goaviary-pic()">AVIARY VILLAGE</button>
 </div>
   <o>
     - This village is a place where can be your spawn point or just call it home point. This means when you "go home" after exploring, you go here.<br>
     - There's also quests in here, like Hopeful Steward quest. They're quest from seasons, but we'll go through that later.<br>
     - And in the village, after the quests are done, you can get: hat, haircut, cape, suit/clothes, mask shop. Actually they are just places you can try to where anything while you were in there. Real clothes that you can wear everywhere and everytime need to be bought from spirits.
     </o>
+  <img id="Prairie-pic" src="dayli1.jpg" alt="Daylight Prairie">
+  <img src="dayli2.jpg" alt="Daylight Pairie">
+</div>
+    <button onclick=goPrairie-pic()">DAYLIGHT AIRIE</button>
+</div>
+  <o>
+    - This is a place filled with sunshine like it's name. To me, it was kind of the butterflies' home, because it was full of butterflies and even have the atracting butterflies emote.<br>
+    - Some specific places are: Butterfly Fields, Prairie Village, Prairie Temple, and more for you to explore!
+  </o>
 </body>
 </html>
+
 
 
 
