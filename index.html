@@ -4,6 +4,9 @@
   <title>Sky</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <style>
+    html {
+  scroll-behavior: smooth;
+}
     body {
       background: linear-gradient(to bottom, #b3e5fc, #e1f5fe);
       font-family: "Georgia", serif;
@@ -90,8 +93,17 @@ button:hover {
   background: linear-gradient(135deg, #2ecc71, #9ae6b4);
   transform: scale(1.1);
 }
-
+    <o id="aviary">Aviary Village</h2>
+<img src="avil1.jpg" alt="Aviary Village">
+<img src="avil2.jpg" alt="Aviary Village">
   </style>
+<script>
+  function goAviary() {
+    document.getElementById("aviary").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+</script>
 </head>
 
 <body>
@@ -100,13 +112,16 @@ button:hover {
   <p class="fade-text">
     This is a web for who want to know what sky-children of the light is like, but I'm not spoil anything, let you discover the fun yourself.
   </p>
+  <div class="card">
   <a>
     In sky, there were a lot of places with different features, quests. No map is the same as another. And each of them have "details". One map can have a lot of places.
   </a>
+  <button class="sky-btn">AVIARY VILLAGE</button>
+</div>
   <div class="card">
   <img src="avil1.jpg" alt="Aviary Village">
   <img src="avil2.jpg" alt="Aviary Village">
-  <button class="sky-btn">AVIARY VILLAGE</button>
+  <button onclick="goAviary()">AVIARY VILLAGE</button>
 </div>
   <o class="text">
     - This village is a place where can be your spawn point or just call it home point. This means when you "go home" after exploring, you go here.
@@ -120,6 +135,7 @@ button:hover {
   </o>
 </body>
 </html>
+
 
 
 
