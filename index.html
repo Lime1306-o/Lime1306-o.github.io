@@ -41,11 +41,25 @@
     .text {
   white-space: pre-line;
 }
+    .fade-text {
+  animation: fadeIn 1.5s ease forwards;
+}
+    @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
     img {
       width: 550px;
       border-radius: 20px;
       margin: 10px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      margin-top: 20px;
     }
      img {
   transition: 0.3s;
@@ -60,7 +74,7 @@ img:hover {
   color: white;
   font-size: 26px;
   font-family: "Georgia", "Times New Roman", serif;
-  padding: 20px  50px;
+  padding: 30px  50px;
   border: none;
   border-radius: 40px;
   cursor: pointer;
@@ -79,7 +93,7 @@ button:hover {
 </head>
 
 <body>
-  <h1 class="fade">Hello new Sky players!!</h1>
+  <h1 class="fade-text">Hello new Sky players!!</h1>
 
   <p>
     This is a web for who want to know what sky-children of the light is like, but I'm not spoil anything, let you discover the fun yourself.
@@ -92,13 +106,14 @@ button:hover {
   <img src="avil1.jpg">
   <img src="avil2.jpg">
 </div>
-  <o class="line">
+  <o class="text">
     - This village is a place where can be your spawn point or just call it home point. This means when you "go home" after exploring, you go here.
     - There's also quests in here, like Hopeful Steward quest. They're quest from seasons, but we'll go through that later.
     - And in the village, after the quests are done, you can get: hat, haircut, cape, suit/clothes, mask shop. Actually they are just places you can try to where anything while you were in there. Real clothes that you can wear everywhere and everytime need to be bought from spirits.
   </o>
 </body>
 </html>
+
 
 
 
